@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MouseRunSideways
+  m_Name: MouseRunDown
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: e1fedefe3674df444bf48d9221c7e68e, type: 3}
+      value: {fileID: 21300000, guid: 476e3f07f91d01f4d8fd08a1bf8acecc, type: 3}
     - time: 0.2
-      value: {fileID: 21300000, guid: b5500533dad14a5498007f90ab70f61a, type: 3}
+      value: {fileID: 21300000, guid: 66296f705af484048bfaed770e05e242, type: 3}
     - time: 0.4
-      value: {fileID: 21300000, guid: e1fedefe3674df444bf48d9221c7e68e, type: 3}
-    - time: 0.6
-      value: {fileID: 21300000, guid: e62bd584ffc705e45931b3011747d166, type: 3}
+      value: {fileID: 21300000, guid: 9e6ec980ce10c2b4fbebb0c1216fe966, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,12 +42,12 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.8
+    m_StopTime: 0.6
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
