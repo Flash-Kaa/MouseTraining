@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using static UnityEngine.RuleTile.TilingRuleOutput;
+using UnityEngine.UI;
 
 public class UIItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
@@ -47,6 +44,12 @@ public class UIItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     {
         transform.localPosition = Vector2.zero;
 
-        _canvasGroup.blocksRaycasts = false;
+        _canvasGroup.blocksRaycasts = true;
+
+        if (int.TryParse(eventData.pointerEnter.name, out var index))
+        {
+            CommandList.Add(GetComponentInChildren<Image>().sprite.name, index);
+        }
+
     }
 }
