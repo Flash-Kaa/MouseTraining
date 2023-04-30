@@ -4,12 +4,9 @@ using UnityEngine.UI;
 
 public class UIItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-    public bool CanDuplicated = true;
-
     private RectTransform _rectTransform;
     private Canvas _canvas;
     private CanvasGroup _canvasGroup;
-    private Vector3 spawnPoint = Vector3.zero;
 
     // Start is called before the first frame update
     void Start()
@@ -21,14 +18,19 @@ public class UIItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (CanDuplicated)
+        if (eventData.pointerEnter.transform.parent.transform.parent.tag != "DoingColumn")
         {
             var newObject = Object.Instantiate(this, transform.position, transform.rotation);
             newObject.transform.SetParent(this.transform.parent);
             newObject.transform.localScale = Vector2.one;
         }
-
-        CanDuplicated = false;
+        else
+        {
+            if (int.TryParse(eventData.pointerEnter.transform.parent.transform.parent.name, out var index))
+            {
+                CommandList.Remove(index);
+            }
+        }
 
         var slotTransform = _rectTransform.parent;
         slotTransform.SetAsLastSibling();
@@ -42,14 +44,18 @@ public class UIItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        transform.localPosition = Vector2.zero;
+        if (eventData.pointerEnter == null || eventData.pointerEnter.tag != "DoingColumn")
+        {
+            Destroy(eventData.pointerDrag);
+            return;
+        }
 
+        transform.localPosition = Vector2.zero;
         _canvasGroup.blocksRaycasts = true;
 
         if (int.TryParse(eventData.pointerEnter.name, out var index))
         {
             CommandList.Add(GetComponentInChildren<Image>().sprite.name, index);
         }
-
     }
 }

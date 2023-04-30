@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DoingColumn
+  - Walls
+  - Trap
+  - SaveProgress
+  - FirstPortal
+  - SecondPortal
+  - Portal
   layers:
   - Default
   - TransparentFX
@@ -46,4 +53,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2971179881
     locked: 0
