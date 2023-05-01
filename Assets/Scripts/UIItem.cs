@@ -8,7 +8,6 @@ public class UIItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
     private Canvas _canvas;
     private CanvasGroup _canvasGroup;
 
-    // Start is called before the first frame update
     void Start()
     {
         _rectTransform = GetComponent<RectTransform>();
@@ -18,18 +17,11 @@ public class UIItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (eventData.pointerEnter.transform.parent.transform.parent.tag != "DoingColumn")
+        if (!eventData.pointerEnter.transform.parent.transform.parent.CompareTag("DoingColumn"))
         {
             var newObject = Object.Instantiate(this, transform.position, transform.rotation);
             newObject.transform.SetParent(this.transform.parent);
             newObject.transform.localScale = Vector2.one;
-        }
-        else
-        {
-            if (int.TryParse(eventData.pointerEnter.transform.parent.transform.parent.name, out var index))
-            {
-                CommandList.Remove(index);
-            }
         }
 
         var slotTransform = _rectTransform.parent;
@@ -52,10 +44,5 @@ public class UIItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
 
         transform.localPosition = Vector2.zero;
         _canvasGroup.blocksRaycasts = true;
-
-        if (int.TryParse(eventData.pointerEnter.name, out var index))
-        {
-            CommandList.Add(GetComponentInChildren<Image>().sprite.name, index);
-        }
     }
 }

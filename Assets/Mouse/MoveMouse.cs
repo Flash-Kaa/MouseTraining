@@ -1,12 +1,17 @@
+using System;
+using System.Globalization;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MoveMouse : MonoBehaviour
 {
     [SerializeField] private float _speed = 2.5f;
+    [SerializeField] private GameObject FlowChart;
 
     private Vector2 _startPosition;
     private Vector3 _target;
     private int _pathIndex = -1;
+    private bool needNewTarget = false;
 
     private SpriteRenderer _sprite;
     private Animator _anim;
@@ -25,21 +30,62 @@ public class MoveMouse : MonoBehaviour
     {
         if (CommandList.GameStart)
         {
-            if (_target == transform.position && EndIfUpdIndexOutOfRange())
+            if (_target == transform.position)
             {
-                return;
-            }
+                if(EndIfUpdIndexOutOfRange())
+                    return;
 
-            var move = CommandList.Path[_pathIndex].Move;
-            if (move == Moving.Right)
-            {
-                _sprite.flipX = false;
+                needNewTarget = true;
             }
-            else if (move == Moving.Left)
+            
+            if (needNewTarget)
             {
-                _sprite.flipX = true;
+                Moving move;
+                try
+                {
+                    if (!Enum.TryParse(
+                        CultureInfo.CurrentCulture.TextInfo.ToTitleCase(FlowChart.transform.GetChild(_pathIndex).GetChild(0).GetComponentInChildren<Image>().sprite.name),
+                        out move))
+                    {
+                        return;
+                    }
+                }
+                catch
+                {
+                    return;
+                }
+
+                switch (move)
+                {
+                    case Moving.Right:
+                        _target = transform.position + new Vector3(CommandList.BrickSize, 0);
+                        break;
+
+                    case Moving.Left:
+                        _target = transform.position + new Vector3(-CommandList.BrickSize, 0);
+                        break;
+
+                    case Moving.Up:
+                        _target = transform.position + new Vector3(0, CommandList.BrickSize);
+                        break;
+
+                    case Moving.Down:
+                        _target = transform.position + new Vector3(0, -CommandList.BrickSize);
+                        break;
+                }
+
+                if (move == Moving.Right)
+                {
+                    _sprite.flipX = false;
+                }
+                else if (move == Moving.Left)
+                {
+                    _sprite.flipX = true;
+                }
+                _anim.SetInteger("Moving", (int)move);
+
+                needNewTarget = false;
             }
-            _anim.SetInteger("Moving", (int)move);
 
             transform.position = Vector2.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
         }
@@ -79,13 +125,12 @@ public class MoveMouse : MonoBehaviour
     {
         _pathIndex++;
 
-        if (CommandList.Count == _pathIndex)
+        if (FlowChart.transform.childCount == _pathIndex)
         {
             StartFromBeggining();
             return true;
         }
 
-        _target = transform.position + CommandList.Path[_pathIndex].Vector;
         return false;
     }
 
