@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/LaboratoryMaze.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/ForestMaze.unity
     guid: a594c696b4d60f545ace86881a455495
+  - enabled: 1
+    path: Assets/Scenes/FirstLaboratotyMaze.unity
+    guid: 82a760a7c6967ac4a9c7c0a59b25d985
+  - enabled: 1
+    path: Assets/Scenes/SecondLaboratoryMaze.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/FirstSewageSystemMaze.unity
+    guid: 51263ded3bba75d4cb7e7f332b7b96c1
+  - enabled: 1
+    path: Assets/Scenes/SecondSewageSystem.unity
+    guid: d7124bbc68d3c4a4ab77ca7380845d0d
+  - enabled: 1
+    path: Assets/Scenes/FirstFinalForestMaze.unity
+    guid: 67ff97ed2f6a8b9448b144a7af7c6f94
   m_configObjects: {}

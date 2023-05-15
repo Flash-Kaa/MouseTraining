@@ -8,9 +8,9 @@ TagManager:
   - Walls
   - Trap
   - SaveProgress
-  - FirstPortal
-  - SecondPortal
   - Portal
+  - Button
+  - FakeTrap
   layers:
   - Default
   - TransparentFX
