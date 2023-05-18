@@ -48,6 +48,9 @@ TagManager:
   - name: background
     uniqueID: 3409398189
     locked: 0
+  - name: river
+    uniqueID: 728148295
+    locked: 0
   - name: walls
     uniqueID: 92706339
     locked: 0

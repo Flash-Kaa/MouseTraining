@@ -9,7 +9,9 @@ public class EnemyMoving : MonoBehaviour
 
     private int _currentIndex;
     private float _speed = 1;
+    private bool _reverse = false;
     private Animator _anim;
+
 
     void Start()
     {
@@ -29,8 +31,17 @@ public class EnemyMoving : MonoBehaviour
 
         if (_currentIndex == -1 || transform.position == _points[_currentIndex].transform.position)
         {
-            if(++_currentIndex >= _points.Length)
+            if (_reverse && --_currentIndex < 0)
+            {
                 _currentIndex = 0;
+                _reverse = false;
+            }
+            else if (!_reverse && ++_currentIndex >= _points.Length)
+            {
+                _currentIndex = _points.Length - 1;
+                _reverse = true;
+            }
+
             chengeAnim = true;
         }
 
