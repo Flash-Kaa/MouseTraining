@@ -241,7 +241,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -885569107
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -56715,6 +56715,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44941c5caf468774493bce3d3fbad7a6, type: 3}
+--- !u!1 &1756167223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1547589859486810347, guid: b1ec8718e31bf49428c533b8ce34195c, type: 3}
+  m_PrefabInstance: {fileID: 1770346880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1756167224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756167223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: What is hiding this passage to the next level?
 --- !u!1001 &1770346880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56849,6 +56868,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8571207022176117076, guid: 95b636997a9601b4ebd2396fddc00725, type: 3}
       propertyPath: FlowChart
+      value: 
+      objectReference: {fileID: 1149202693}
+    - target: {fileID: 8571207022176117076, guid: 95b636997a9601b4ebd2396fddc00725, type: 3}
+      propertyPath: _flowChartContent
       value: 
       objectReference: {fileID: 1149202693}
     m_RemovedComponents: []

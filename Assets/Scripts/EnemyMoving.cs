@@ -28,7 +28,7 @@ public class EnemyMoving : MonoBehaviour
         }
 
         var chengeAnim = false;
-
+        
         if (_currentIndex == -1 || transform.position == _points[_currentIndex].transform.position)
         {
             if (_reverse && --_currentIndex < 0)

@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &14417736 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3556089035809665233, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
+  m_PrefabInstance: {fileID: 623288025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &73613456
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,6 +194,25 @@ Transform:
   m_Father: {fileID: 1744755602}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &135363278 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3556089035809665233, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
+  m_PrefabInstance: {fileID: 287932689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &135363279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135363278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: It's a trap! Be careful!
 --- !u!1 &142882209
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +280,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
   m_PrefabInstance: {fileID: 623288025}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &197662566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14417736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4720b8e7f6bbf32458eabffaa7ac1685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnObject: {fileID: 814951313070597383, guid: 3bceb1b5a57b9fb4cab1f68363f5cdd2, type: 3}
+  _spawnTime: 5
+--- !u!114 &197662567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14417736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: It's a trap! Be careful!
 --- !u!1 &223355043
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +377,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3556089035809665196, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ac87137a7b5be2941a81bf9d71e2dcff, type: 3}
     - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -368,6 +424,14 @@ PrefabInstance:
     - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556089035809665199, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.42666668
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556089035809665199, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.42666668
       objectReference: {fileID: 0}
     - target: {fileID: 3556089035809665233, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
       propertyPath: m_Name
@@ -3516,7 +3580,7 @@ Tilemap:
       - {fileID: 21300000, guid: be1eb35f9081d3e4e921176805084e95, type: 3}
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
       - {fileID: 21300000, guid: 64cccd96001f9fc499872ea7163a93ce, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 42, y: -17, z: 0}
@@ -3570,7 +3634,7 @@ Tilemap:
       - {fileID: 21300000, guid: 64cccd96001f9fc499872ea7163a93ce, type: 3}
       - {fileID: 21300000, guid: 330439d94b9e64e4da6c85df6bf4287e, type: 3}
       - {fileID: 21300000, guid: be1eb35f9081d3e4e921176805084e95, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 40, y: -16, z: 0}
@@ -3580,7 +3644,7 @@ Tilemap:
       - {fileID: 21300000, guid: 330439d94b9e64e4da6c85df6bf4287e, type: 3}
       - {fileID: 21300000, guid: be1eb35f9081d3e4e921176805084e95, type: 3}
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 41, y: -16, z: 0}
@@ -3746,7 +3810,7 @@ Tilemap:
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
       - {fileID: 21300000, guid: 64cccd96001f9fc499872ea7163a93ce, type: 3}
       - {fileID: 21300000, guid: 330439d94b9e64e4da6c85df6bf4287e, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 37, y: -15, z: 0}
@@ -3762,7 +3826,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: a423bb05216720c4e83003aa7f148dce, type: 3}
       - {fileID: 21300000, guid: 6029b90785cb2b246bf7cfb7525f495e, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 39, y: -15, z: 0}
@@ -3856,7 +3920,7 @@ Tilemap:
       - {fileID: 21300000, guid: be1eb35f9081d3e4e921176805084e95, type: 3}
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
       - {fileID: 21300000, guid: 64cccd96001f9fc499872ea7163a93ce, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 28, y: -14, z: 0}
@@ -3954,7 +4018,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: 6029b90785cb2b246bf7cfb7525f495e, type: 3}
       - {fileID: 21300000, guid: a423bb05216720c4e83003aa7f148dce, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 38, y: -14, z: 0}
@@ -4366,7 +4430,7 @@ Tilemap:
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
       - {fileID: 21300000, guid: 64cccd96001f9fc499872ea7163a93ce, type: 3}
       - {fileID: 21300000, guid: 330439d94b9e64e4da6c85df6bf4287e, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 18, y: -9, z: 0}
@@ -4608,7 +4672,7 @@ Tilemap:
       - {fileID: 21300000, guid: 330439d94b9e64e4da6c85df6bf4287e, type: 3}
       - {fileID: 21300000, guid: be1eb35f9081d3e4e921176805084e95, type: 3}
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 5, y: -4, z: 0}
@@ -4698,7 +4762,7 @@ Tilemap:
       - {fileID: 21300000, guid: 330439d94b9e64e4da6c85df6bf4287e, type: 3}
       - {fileID: 21300000, guid: be1eb35f9081d3e4e921176805084e95, type: 3}
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 5, y: -3, z: 0}
@@ -4844,7 +4908,7 @@ Tilemap:
       - {fileID: 21300000, guid: be1eb35f9081d3e4e921176805084e95, type: 3}
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
       - {fileID: 21300000, guid: 64cccd96001f9fc499872ea7163a93ce, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -34, y: -1, z: 0}
@@ -4854,7 +4918,7 @@ Tilemap:
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
       - {fileID: 21300000, guid: 64cccd96001f9fc499872ea7163a93ce, type: 3}
       - {fileID: 21300000, guid: 330439d94b9e64e4da6c85df6bf4287e, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -33, y: -1, z: 0}
@@ -5164,7 +5228,7 @@ Tilemap:
       - {fileID: 21300000, guid: be1eb35f9081d3e4e921176805084e95, type: 3}
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
       - {fileID: 21300000, guid: 64cccd96001f9fc499872ea7163a93ce, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -2, y: -1, z: 0}
@@ -5332,7 +5396,7 @@ Tilemap:
       - {fileID: 21300000, guid: 330439d94b9e64e4da6c85df6bf4287e, type: 3}
       - {fileID: 21300000, guid: be1eb35f9081d3e4e921176805084e95, type: 3}
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -27, y: 0, z: 0}
@@ -5700,7 +5764,7 @@ Tilemap:
       - {fileID: 21300000, guid: 330439d94b9e64e4da6c85df6bf4287e, type: 3}
       - {fileID: 21300000, guid: be1eb35f9081d3e4e921176805084e95, type: 3}
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -35, y: 1, z: 0}
@@ -5780,7 +5844,7 @@ Tilemap:
       - {fileID: 21300000, guid: 330439d94b9e64e4da6c85df6bf4287e, type: 3}
       - {fileID: 21300000, guid: be1eb35f9081d3e4e921176805084e95, type: 3}
       - {fileID: 21300000, guid: 9b8a873a5a1584b46a9d3ac660f3f0ff, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -27, y: 1, z: 0}
@@ -6058,7 +6122,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: 6029b90785cb2b246bf7cfb7525f495e, type: 3}
       - {fileID: 21300000, guid: a423bb05216720c4e83003aa7f148dce, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -45, y: 2, z: 0}
@@ -14663,67 +14727,10 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &528121102
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1723677004}
-    m_Modifications:
-    - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.6878412
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.1494968
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.2493915
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3556089035809665233, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-      propertyPath: m_Name
-      value: Trap
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
---- !u!4 &544745124 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
-  m_PrefabInstance: {fileID: 528121102}
+--- !u!1 &524134671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 854370136715915858, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+  m_PrefabInstance: {fileID: 4216091903094643532}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &558434166 stripped
 GameObject:
@@ -14768,21 +14775,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723677004}
     m_Modifications:
+    - target: {fileID: 3556089035809665196, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ac87137a7b5be2941a81bf9d71e2dcff, type: 3}
     - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.912159
+      value: 0.60000014
       objectReference: {fileID: 0}
     - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.749497
+      value: -3.4
       objectReference: {fileID: 0}
     - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.2493915
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14811,6 +14822,14 @@ PrefabInstance:
     - target: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556089035809665199, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.42666668
+      objectReference: {fileID: 0}
+    - target: {fileID: 3556089035809665199, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.42666668
       objectReference: {fileID: 0}
     - target: {fileID: 3556089035809665233, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
       propertyPath: m_Name
@@ -15910,6 +15929,7 @@ GameObject:
   - component: {fileID: 704521712}
   - component: {fileID: 704521711}
   - component: {fileID: 704521710}
+  - component: {fileID: 704521714}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Untagged
@@ -16047,6 +16067,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &704521714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704521708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: Beware of rats. They are extremely dangerous!
 --- !u!1001 &737856296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16117,6 +16151,7 @@ GameObject:
   - component: {fileID: 755915615}
   - component: {fileID: 755915614}
   - component: {fileID: 755915613}
+  - component: {fileID: 755915617}
   m_Layer: 0
   m_Name: Rat (1)
   m_TagString: Untagged
@@ -16255,6 +16290,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &755915617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755915611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: Beware of rats. They are extremely dangerous!
 --- !u!1 &829499719
 GameObject:
   m_ObjectHideFlags: 0
@@ -16300,6 +16349,7 @@ GameObject:
   - component: {fileID: 855656793}
   - component: {fileID: 855656792}
   - component: {fileID: 855656791}
+  - component: {fileID: 855656796}
   m_Layer: 0
   m_Name: Rat (2)
   m_TagString: Untagged
@@ -16446,6 +16496,20 @@ Transform:
   m_Father: {fileID: 1744755602}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &855656796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855656790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: Beware of rats. They are extremely dangerous!
 --- !u!1 &877900284
 GameObject:
   m_ObjectHideFlags: 0
@@ -16568,6 +16632,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8571207022176117076, guid: 95b636997a9601b4ebd2396fddc00725, type: 3}
       propertyPath: FlowChart
+      value: 
+      objectReference: {fileID: 558434166}
+    - target: {fileID: 8571207022176117076, guid: 95b636997a9601b4ebd2396fddc00725, type: 3}
+      propertyPath: _flowChartContent
       value: 
       objectReference: {fileID: 558434166}
     m_RemovedComponents: []
@@ -16785,6 +16853,25 @@ Transform:
   m_Father: {fileID: 2004578258}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &976956303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1547589859486810347, guid: b1ec8718e31bf49428c533b8ce34195c, type: 3}
+  m_PrefabInstance: {fileID: 737856296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &976956304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976956303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: What is hiding this passage to the next level?
 --- !u!1 &1046032448
 GameObject:
   m_ObjectHideFlags: 0
@@ -16816,6 +16903,11 @@ Transform:
   m_Father: {fileID: 877900285}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1047761610 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 854370136715915858, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+  m_PrefabInstance: {fileID: 1951466208}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1102321095
 GameObject:
   m_ObjectHideFlags: 0
@@ -16829,6 +16921,7 @@ GameObject:
   - component: {fileID: 1102321099}
   - component: {fileID: 1102321098}
   - component: {fileID: 1102321097}
+  - component: {fileID: 1102321101}
   m_Layer: 0
   m_Name: Rat (1)
   m_TagString: Untagged
@@ -16967,6 +17060,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1102321101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102321095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: Beware of rats. They are extremely dangerous!
 --- !u!1 &1119166006
 GameObject:
   m_ObjectHideFlags: 0
@@ -17086,6 +17193,25 @@ Transform:
   m_Father: {fileID: 1913897727}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1316196885 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+  m_PrefabInstance: {fileID: 1951466208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1316196886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047761610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: It's a trap! Be careful!
 --- !u!1 &1394467659
 GameObject:
   m_ObjectHideFlags: 0
@@ -17239,12 +17365,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723677003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3121588, y: -0.6505031, z: -0.2493915}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 197662563}
-  - {fileID: 544745124}
+  - {fileID: 3556089036898314593}
+  - {fileID: 1316196885}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17260,6 +17387,7 @@ GameObject:
   - component: {fileID: 1731860214}
   - component: {fileID: 1731860213}
   - component: {fileID: 1731860212}
+  - component: {fileID: 1731860215}
   m_Layer: 0
   m_Name: FinishWithSkip
   m_TagString: Untagged
@@ -17372,6 +17500,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1731860215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731860210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: It's a trap! Be careful!
 --- !u!1 &1744755601
 GameObject:
   m_ObjectHideFlags: 0
@@ -61940,6 +62082,7 @@ GameObject:
   - component: {fileID: 1895716274}
   - component: {fileID: 1895716273}
   - component: {fileID: 1895716272}
+  - component: {fileID: 1895716276}
   m_Layer: 0
   m_Name: Rat (1)
   m_TagString: Untagged
@@ -62079,6 +62222,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1895716276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895716270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: Beware of rats. They are extremely dangerous!
 --- !u!1 &1913897726
 GameObject:
   m_ObjectHideFlags: 0
@@ -62161,6 +62318,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1951466208
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1723677004}
+    m_Modifications:
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915858, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_Name
+      value: Trap (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216091903926980017, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: _spawnTime
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
 --- !u!1 &2004578257
 GameObject:
   m_ObjectHideFlags: 0
@@ -62350,3 +62568,79 @@ Transform:
   m_Father: {fileID: 1744755602}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &3556089036898314593 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+  m_PrefabInstance: {fileID: 4216091903094643532}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3556089036898314594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524134671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: It's a trap! Be careful!
+--- !u!1001 &4216091903094643532
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1723677004}
+    m_Modifications:
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915821, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 854370136715915858, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}
+      propertyPath: m_Name
+      value: Trap (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9cbcd3debf1bfdf499610aa76dba4b0f, type: 3}

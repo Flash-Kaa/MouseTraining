@@ -134,7 +134,8 @@ GameObject:
   - component: {fileID: 10392114}
   - component: {fileID: 10392116}
   - component: {fileID: 10392115}
-  m_Layer: 0
+  - component: {fileID: 10392117}
+  m_Layer: 7
   m_Name: laser (4)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -220,8 +221,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 34af54cc9b942fe40ba635a22c2d5071, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -234,6 +235,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &10392117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10392113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1 &140223416
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,6 +295,25 @@ Transform:
   m_Father: {fileID: 1041885855}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &143319054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8593074398793192709, guid: ed7847f402ad40b44ba3232e45867664, type: 3}
+  m_PrefabInstance: {fileID: 8593074398748357230}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &143319055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143319054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: This button is clearly needed for something...
 --- !u!1 &174176741
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +436,7 @@ GameObject:
   - component: {fileID: 186721059}
   - component: {fileID: 186721061}
   - component: {fileID: 186721060}
+  - component: {fileID: 186721062}
   m_Layer: 0
   m_Name: laser (3)
   m_TagString: Trap
@@ -488,8 +523,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -502,6 +537,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &186721062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186721058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1 &187119917
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +562,7 @@ GameObject:
   - component: {fileID: 187119918}
   - component: {fileID: 187119920}
   - component: {fileID: 187119919}
+  - component: {fileID: 187119921}
   m_Layer: 0
   m_Name: laser (1)
   m_TagString: Trap
@@ -599,8 +649,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -613,6 +663,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &187119921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187119917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1 &295060298
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,7 +688,8 @@ GameObject:
   - component: {fileID: 295060299}
   - component: {fileID: 295060301}
   - component: {fileID: 295060300}
-  m_Layer: 0
+  - component: {fileID: 295060302}
+  m_Layer: 7
   m_Name: laser
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -710,8 +775,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 34af54cc9b942fe40ba635a22c2d5071, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -724,6 +789,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &295060302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295060298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
+--- !u!1 &303632517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1547589859486810347, guid: b1ec8718e31bf49428c533b8ce34195c, type: 3}
+  m_PrefabInstance: {fileID: 445133147}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &303632518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303632517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: What is hiding this passage to the next level?
 --- !u!1 &370633359
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +833,8 @@ GameObject:
   - component: {fileID: 370633360}
   - component: {fileID: 370633362}
   - component: {fileID: 370633361}
-  m_Layer: 0
+  - component: {fileID: 370633363}
+  m_Layer: 7
   m_Name: laser (6)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -821,8 +920,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 34af54cc9b942fe40ba635a22c2d5071, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -835,6 +934,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &370633363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370633359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
+--- !u!1 &412604724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7351311254093464629, guid: 0e18aec9052019b43b09e0806c33a0bb, type: 3}
+  m_PrefabInstance: {fileID: 1211427766}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &412604726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412604724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The portal can send you to another point on the map.
 --- !u!1001 &442270634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -965,6 +1097,7 @@ GameObject:
   - component: {fileID: 445306708}
   - component: {fileID: 445306710}
   - component: {fileID: 445306709}
+  - component: {fileID: 445306711}
   m_Layer: 0
   m_Name: laser (6)
   m_TagString: Trap
@@ -1051,8 +1184,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1065,6 +1198,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &445306711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445306707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1 &561251962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1223,7 @@ GameObject:
   - component: {fileID: 561251963}
   - component: {fileID: 561251965}
   - component: {fileID: 561251964}
+  - component: {fileID: 561251966}
   m_Layer: 0
   m_Name: laser (4)
   m_TagString: Trap
@@ -1162,8 +1310,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1176,6 +1324,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &561251966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561251962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1 &611410041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,7 +1439,8 @@ GameObject:
   - component: {fileID: 828583464}
   - component: {fileID: 828583466}
   - component: {fileID: 828583465}
-  m_Layer: 0
+  - component: {fileID: 828583467}
+  m_Layer: 7
   m_Name: laser (5)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -1363,8 +1526,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 34af54cc9b942fe40ba635a22c2d5071, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1377,6 +1540,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &828583467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828583463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1 &909828016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,7 +1565,8 @@ GameObject:
   - component: {fileID: 909828017}
   - component: {fileID: 909828019}
   - component: {fileID: 909828018}
-  m_Layer: 0
+  - component: {fileID: 909828020}
+  m_Layer: 7
   m_Name: laser (7)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -1474,8 +1652,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 34af54cc9b942fe40ba635a22c2d5071, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1488,6 +1666,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &909828020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909828016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1 &961633495
 GameObject:
   m_ObjectHideFlags: 0
@@ -7586,6 +7778,7 @@ GameObject:
   - component: {fileID: 1107280251}
   - component: {fileID: 1107280253}
   - component: {fileID: 1107280252}
+  - component: {fileID: 1107280254}
   m_Layer: 0
   m_Name: laser (11)
   m_TagString: Trap
@@ -7672,8 +7865,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7686,11 +7879,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1107280254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107280250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!4 &1114716855 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3682199041858779233, guid: e8a5bb88215d6e347b6e5eb902f0bb8b, type: 3}
   m_PrefabInstance: {fileID: 3682199040750486230}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1120956315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7351311253975868355, guid: 0e18aec9052019b43b09e0806c33a0bb, type: 3}
+  m_PrefabInstance: {fileID: 1211427766}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1120956316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120956315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The portal can send you to another point on the map.
 --- !u!1001 &1161017319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7780,6 +8006,7 @@ GameObject:
   - component: {fileID: 1161950076}
   - component: {fileID: 1161950078}
   - component: {fileID: 1161950077}
+  - component: {fileID: 1161950079}
   m_Layer: 0
   m_Name: laser (8)
   m_TagString: Trap
@@ -7866,8 +8093,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7880,6 +8107,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1161950079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161950075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
+--- !u!1 &1203948370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3556089035809665233, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
+  m_PrefabInstance: {fileID: 1952551225}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1205689690
 GameObject:
   m_ObjectHideFlags: 0
@@ -7891,6 +8137,7 @@ GameObject:
   - component: {fileID: 1205689691}
   - component: {fileID: 1205689693}
   - component: {fileID: 1205689692}
+  - component: {fileID: 1205689694}
   m_Layer: 0
   m_Name: laser (2)
   m_TagString: Trap
@@ -7977,8 +8224,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7991,6 +8238,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1205689694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205689690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1001 &1211427766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8080,7 +8341,8 @@ GameObject:
   - component: {fileID: 1297569624}
   - component: {fileID: 1297569626}
   - component: {fileID: 1297569625}
-  m_Layer: 0
+  - component: {fileID: 1297569627}
+  m_Layer: 7
   m_Name: laser (2)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -8166,8 +8428,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 34af54cc9b942fe40ba635a22c2d5071, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8180,6 +8442,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1297569627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297569623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1 &1313560901
 GameObject:
   m_ObjectHideFlags: 0
@@ -8191,6 +8467,7 @@ GameObject:
   - component: {fileID: 1313560902}
   - component: {fileID: 1313560904}
   - component: {fileID: 1313560903}
+  - component: {fileID: 1313560905}
   m_Layer: 0
   m_Name: laser (12)
   m_TagString: Trap
@@ -8277,8 +8554,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8291,6 +8568,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1313560905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313560901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
+--- !u!1 &1361044527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4479376527711426873, guid: 29323cc4920214d42bd4f6f86e167475, type: 3}
+  m_PrefabInstance: {fileID: 1161017319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1361044528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361044527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The portal can send you to another point on the map.
 --- !u!1 &1364461925
 GameObject:
   m_ObjectHideFlags: 0
@@ -8302,6 +8612,7 @@ GameObject:
   - component: {fileID: 1364461926}
   - component: {fileID: 1364461928}
   - component: {fileID: 1364461927}
+  - component: {fileID: 1364461929}
   m_Layer: 0
   m_Name: laser (9)
   m_TagString: Trap
@@ -8388,8 +8699,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8402,6 +8713,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1364461929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364461925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1001 &1437476540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8556,6 +8881,10 @@ PrefabInstance:
       propertyPath: FlowChart
       value: 
       objectReference: {fileID: 1998594327}
+    - target: {fileID: 8571207022176117076, guid: 95b636997a9601b4ebd2396fddc00725, type: 3}
+      propertyPath: _flowChartContent
+      value: 
+      objectReference: {fileID: 1998594327}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95b636997a9601b4ebd2396fddc00725, type: 3}
 --- !u!1 &1611803707
@@ -8569,6 +8898,7 @@ GameObject:
   - component: {fileID: 1611803708}
   - component: {fileID: 1611803710}
   - component: {fileID: 1611803709}
+  - component: {fileID: 1611803711}
   m_Layer: 0
   m_Name: laser (13)
   m_TagString: Trap
@@ -8584,7 +8914,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611803707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.653, y: -3.0125449, z: 0.009464043}
+  m_LocalPosition: {x: 3.5, y: -3.0125449, z: 0.009464043}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8655,8 +8985,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8669,6 +8999,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1611803711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611803707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1 &1614351053
 GameObject:
   m_ObjectHideFlags: 0
@@ -8680,7 +9024,8 @@ GameObject:
   - component: {fileID: 1614351054}
   - component: {fileID: 1614351056}
   - component: {fileID: 1614351055}
-  m_Layer: 0
+  - component: {fileID: 1614351057}
+  m_Layer: 7
   m_Name: laser (3)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -8766,8 +9111,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 34af54cc9b942fe40ba635a22c2d5071, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8780,6 +9125,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1614351057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614351053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1 &1649427996
 GameObject:
   m_ObjectHideFlags: 0
@@ -8791,6 +9150,7 @@ GameObject:
   - component: {fileID: 1649427997}
   - component: {fileID: 1649427999}
   - component: {fileID: 1649427998}
+  - component: {fileID: 1649428000}
   m_Layer: 0
   m_Name: laser (10)
   m_TagString: Trap
@@ -8877,8 +9237,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8891,6 +9251,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1649428000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649427996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1 &1701665484
 GameObject:
   m_ObjectHideFlags: 0
@@ -8902,7 +9276,8 @@ GameObject:
   - component: {fileID: 1701665485}
   - component: {fileID: 1701665487}
   - component: {fileID: 1701665486}
-  m_Layer: 0
+  - component: {fileID: 1701665488}
+  m_Layer: 7
   m_Name: laser (1)
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -8988,8 +9363,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 34af54cc9b942fe40ba635a22c2d5071, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9002,6 +9377,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1701665488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701665484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
+--- !u!1 &1780602724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3556089035809665233, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
+  m_PrefabInstance: {fileID: 442270634}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1780602725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780602724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: It's a trap! Be careful!
 --- !u!1 &1801779782
 GameObject:
   m_ObjectHideFlags: 0
@@ -9013,6 +9421,7 @@ GameObject:
   - component: {fileID: 1801779783}
   - component: {fileID: 1801779785}
   - component: {fileID: 1801779784}
+  - component: {fileID: 1801779786}
   m_Layer: 0
   m_Name: laser (5)
   m_TagString: Trap
@@ -9099,8 +9508,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9113,6 +9522,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1801779786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801779782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1001 &1952551225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9175,6 +9598,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3556089035809665198, guid: a59c9a7db7a8add4e8a2a38ee6e3be93, type: 3}
   m_PrefabInstance: {fileID: 1952551225}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1952551227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203948370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: It's a trap! Be careful!
 --- !u!1 &1975850884
 GameObject:
   m_ObjectHideFlags: 0
@@ -9247,7 +9684,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -885569107
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -9629,8 +10066,8 @@ Tilemap:
   - first: {x: -9, y: -25, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -9789,8 +10226,8 @@ Tilemap:
   - first: {x: 7, y: -25, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10529,8 +10966,8 @@ Tilemap:
   - first: {x: -9, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 16
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10539,8 +10976,8 @@ Tilemap:
   - first: {x: -8, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10549,8 +10986,8 @@ Tilemap:
   - first: {x: -7, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10559,8 +10996,8 @@ Tilemap:
   - first: {x: -6, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10569,8 +11006,8 @@ Tilemap:
   - first: {x: -5, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10579,8 +11016,8 @@ Tilemap:
   - first: {x: -4, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10589,8 +11026,8 @@ Tilemap:
   - first: {x: -3, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10599,8 +11036,8 @@ Tilemap:
   - first: {x: -2, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10609,8 +11046,8 @@ Tilemap:
   - first: {x: -1, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10619,8 +11056,8 @@ Tilemap:
   - first: {x: 0, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10629,8 +11066,8 @@ Tilemap:
   - first: {x: 1, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10639,8 +11076,8 @@ Tilemap:
   - first: {x: 2, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10649,8 +11086,8 @@ Tilemap:
   - first: {x: 3, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10659,8 +11096,8 @@ Tilemap:
   - first: {x: 4, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10669,8 +11106,8 @@ Tilemap:
   - first: {x: 5, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10679,8 +11116,8 @@ Tilemap:
   - first: {x: 6, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -10689,8 +11126,8 @@ Tilemap:
   - first: {x: 7, y: -24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 17
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -11429,8 +11866,8 @@ Tilemap:
   - first: {x: -9, y: -23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -12329,8 +12766,8 @@ Tilemap:
   - first: {x: -9, y: -22, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 11
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -13229,8 +13666,8 @@ Tilemap:
   - first: {x: -9, y: -21, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -14129,8 +14566,8 @@ Tilemap:
   - first: {x: -9, y: -20, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15029,8 +15466,8 @@ Tilemap:
   - first: {x: -9, y: -19, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15719,8 +16156,8 @@ Tilemap:
   - first: {x: -30, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 16
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15729,8 +16166,8 @@ Tilemap:
   - first: {x: -29, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15739,8 +16176,8 @@ Tilemap:
   - first: {x: -28, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15749,8 +16186,8 @@ Tilemap:
   - first: {x: -27, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15759,8 +16196,8 @@ Tilemap:
   - first: {x: -26, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15769,8 +16206,8 @@ Tilemap:
   - first: {x: -25, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15779,8 +16216,8 @@ Tilemap:
   - first: {x: -24, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15789,8 +16226,8 @@ Tilemap:
   - first: {x: -23, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15799,8 +16236,8 @@ Tilemap:
   - first: {x: -22, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15809,8 +16246,8 @@ Tilemap:
   - first: {x: -21, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15819,8 +16256,8 @@ Tilemap:
   - first: {x: -20, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 5
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15829,8 +16266,8 @@ Tilemap:
   - first: {x: -19, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15839,8 +16276,8 @@ Tilemap:
   - first: {x: -18, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15849,8 +16286,8 @@ Tilemap:
   - first: {x: -17, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15859,8 +16296,8 @@ Tilemap:
   - first: {x: -16, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15869,8 +16306,8 @@ Tilemap:
   - first: {x: -15, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15879,8 +16316,8 @@ Tilemap:
   - first: {x: -14, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15889,8 +16326,8 @@ Tilemap:
   - first: {x: -13, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15899,8 +16336,8 @@ Tilemap:
   - first: {x: -12, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15909,8 +16346,8 @@ Tilemap:
   - first: {x: -11, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15919,8 +16356,8 @@ Tilemap:
   - first: {x: -10, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15929,8 +16366,8 @@ Tilemap:
   - first: {x: -9, y: -18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 17
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -16619,8 +17056,8 @@ Tilemap:
   - first: {x: -30, y: -17, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -17519,8 +17956,8 @@ Tilemap:
   - first: {x: -30, y: -16, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -18419,8 +18856,8 @@ Tilemap:
   - first: {x: -30, y: -15, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -19319,8 +19756,8 @@ Tilemap:
   - first: {x: -30, y: -14, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -20219,8 +20656,8 @@ Tilemap:
   - first: {x: -30, y: -13, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -21119,8 +21556,8 @@ Tilemap:
   - first: {x: -30, y: -12, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -22019,8 +22456,8 @@ Tilemap:
   - first: {x: -30, y: -11, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 11
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -22919,8 +23356,8 @@ Tilemap:
   - first: {x: -30, y: -10, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -23819,8 +24256,8 @@ Tilemap:
   - first: {x: -30, y: -9, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -24719,8 +25156,8 @@ Tilemap:
   - first: {x: -30, y: -8, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -25619,8 +26056,8 @@ Tilemap:
   - first: {x: -30, y: -7, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -26519,8 +26956,8 @@ Tilemap:
   - first: {x: -30, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -27419,8 +27856,8 @@ Tilemap:
   - first: {x: -30, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -28319,8 +28756,8 @@ Tilemap:
   - first: {x: -30, y: -4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -29219,8 +29656,8 @@ Tilemap:
   - first: {x: -30, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -30119,8 +30556,8 @@ Tilemap:
   - first: {x: -30, y: -2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -31019,8 +31456,8 @@ Tilemap:
   - first: {x: -30, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -31919,8 +32356,8 @@ Tilemap:
   - first: {x: -30, y: 0, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -32819,8 +33256,8 @@ Tilemap:
   - first: {x: -30, y: 1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 11
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -33719,8 +34156,8 @@ Tilemap:
   - first: {x: -30, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -34529,8 +34966,8 @@ Tilemap:
   - first: {x: -39, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 16
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -34539,8 +34976,8 @@ Tilemap:
   - first: {x: -38, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -34549,8 +34986,8 @@ Tilemap:
   - first: {x: -37, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -34559,8 +34996,8 @@ Tilemap:
   - first: {x: -36, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -34569,8 +35006,8 @@ Tilemap:
   - first: {x: -35, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -34579,8 +35016,8 @@ Tilemap:
   - first: {x: -34, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -34589,8 +35026,8 @@ Tilemap:
   - first: {x: -33, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -34599,8 +35036,8 @@ Tilemap:
   - first: {x: -32, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -34609,8 +35046,8 @@ Tilemap:
   - first: {x: -31, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -34619,8 +35056,8 @@ Tilemap:
   - first: {x: -30, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 17
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -35429,8 +35866,8 @@ Tilemap:
   - first: {x: -39, y: 4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -36329,8 +36766,8 @@ Tilemap:
   - first: {x: -39, y: 5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -37229,8 +37666,8 @@ Tilemap:
   - first: {x: -39, y: 6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -38129,8 +38566,8 @@ Tilemap:
   - first: {x: -39, y: 7, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -39029,8 +39466,8 @@ Tilemap:
   - first: {x: -39, y: 8, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -39929,8 +40366,8 @@ Tilemap:
   - first: {x: -39, y: 9, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -40829,8 +41266,8 @@ Tilemap:
   - first: {x: -39, y: 10, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 11
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -41729,8 +42166,8 @@ Tilemap:
   - first: {x: -39, y: 11, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -42629,8 +43066,8 @@ Tilemap:
   - first: {x: -39, y: 12, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -43529,8 +43966,8 @@ Tilemap:
   - first: {x: -39, y: 13, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -44429,8 +44866,8 @@ Tilemap:
   - first: {x: -39, y: 14, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -45329,8 +45766,8 @@ Tilemap:
   - first: {x: -39, y: 15, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -46229,8 +46666,8 @@ Tilemap:
   - first: {x: -39, y: 16, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -47129,8 +47566,8 @@ Tilemap:
   - first: {x: -39, y: 17, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -48029,8 +48466,8 @@ Tilemap:
   - first: {x: -39, y: 18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -48929,8 +49366,8 @@ Tilemap:
   - first: {x: -39, y: 19, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -49829,8 +50266,8 @@ Tilemap:
   - first: {x: -39, y: 20, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -50729,8 +51166,8 @@ Tilemap:
   - first: {x: -39, y: 21, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -51629,8 +52066,8 @@ Tilemap:
   - first: {x: -39, y: 22, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 11
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52529,8 +52966,8 @@ Tilemap:
   - first: {x: -39, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 14
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52539,8 +52976,8 @@ Tilemap:
   - first: {x: -38, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 5
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52549,8 +52986,8 @@ Tilemap:
   - first: {x: -37, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52559,8 +52996,8 @@ Tilemap:
   - first: {x: -36, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52569,8 +53006,8 @@ Tilemap:
   - first: {x: -35, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52579,8 +53016,8 @@ Tilemap:
   - first: {x: -34, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52589,8 +53026,8 @@ Tilemap:
   - first: {x: -33, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52599,8 +53036,8 @@ Tilemap:
   - first: {x: -32, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52609,8 +53046,8 @@ Tilemap:
   - first: {x: -31, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 5
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52619,8 +53056,8 @@ Tilemap:
   - first: {x: -30, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52629,8 +53066,8 @@ Tilemap:
   - first: {x: -29, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52639,8 +53076,8 @@ Tilemap:
   - first: {x: -28, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 15
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -52649,8 +53086,8 @@ Tilemap:
   - first: {x: -27, y: 23, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 13
+      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -53429,8 +53866,8 @@ Tilemap:
   - first: {x: -39, y: 24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -53549,8 +53986,8 @@ Tilemap:
   - first: {x: -27, y: 24, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 18
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -54268,17 +54705,17 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 3807
+  - m_RefCount: 3712
     m_Data: {fileID: 11400000, guid: 821fb2628c461e341bbb3cf239dd2378, type: 2}
-  - m_RefCount: 103
+  - m_RefCount: 101
     m_Data: {fileID: 11400000, guid: 20e4963ca93c7bd4eb6f5f984c862621, type: 2}
-  - m_RefCount: 140
+  - m_RefCount: 135
     m_Data: {fileID: 11400000, guid: cdcb6b6c4ae0cfd4886dd2e937e319c7, type: 2}
-  - m_RefCount: 215
+  - m_RefCount: 211
     m_Data: {fileID: 11400000, guid: 4f462e595de0cfc4db2d2b1a7d303b4e, type: 2}
-  - m_RefCount: 58
+  - m_RefCount: 59
     m_Data: {fileID: 11400000, guid: 78f5b188789877645a5bc2b1eba4d8bf, type: 2}
-  - m_RefCount: 177
+  - m_RefCount: 174
     m_Data: {fileID: 11400000, guid: 475bcf6489db7284db8fce29800278c0, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -54290,34 +54727,34 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 5
+    m_Data: {fileID: 11400000, guid: f118c0688b5cfbf469b6bf7f34db9b92, type: 2}
+  - m_RefCount: 5
+    m_Data: {fileID: 11400000, guid: f90a7013ebc66ea42a002de41e8662a4, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: f59f727ca4ce57144bdbfb728518250e, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 06cae1cc952fff04badf008342540bf8, type: 2}
+  - m_RefCount: 49
+    m_Data: {fileID: 11400000, guid: c15302e1b963e82418467195b3e4b16b, type: 2}
+  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: 60f12a3954ab98c45bbc5dfee343fd2d, type: 2}
+  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: a02a179492c36eb4faceb1f48c00828b, type: 2}
+  - m_RefCount: 41
+    m_Data: {fileID: 11400000, guid: cdec4d68c02f3134f8f29c997251badc, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 3807
+  - m_RefCount: 3712
     m_Data: {fileID: 21300000, guid: c8cc7ceba378f6e4d9c2c0dc62489169, type: 3}
-  - m_RefCount: 103
+  - m_RefCount: 101
     m_Data: {fileID: 21300000, guid: fcf86ede5cac0814b830867fd63d73e9, type: 3}
-  - m_RefCount: 140
+  - m_RefCount: 135
     m_Data: {fileID: 21300000, guid: 1d71237b6639c88478d13bd1a61445ec, type: 3}
-  - m_RefCount: 215
+  - m_RefCount: 211
     m_Data: {fileID: 21300000, guid: 97179ad03b735d248b4ff3b189c6c684, type: 3}
-  - m_RefCount: 58
+  - m_RefCount: 59
     m_Data: {fileID: 21300000, guid: 675cbf149f400174a834dd341cabdf17, type: 3}
-  - m_RefCount: 177
+  - m_RefCount: 174
     m_Data: {fileID: 21300000, guid: 29a87a1f4f8eea646858ce6503444e1d, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -54329,22 +54766,22 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 5
+    m_Data: {fileID: 21300000, guid: d265ed249794e1c4b8f738e60a14ff27, type: 3}
+  - m_RefCount: 5
+    m_Data: {fileID: 21300000, guid: f93af0a30ca802148b001d82e78d7e88, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 43f3fd6f386e59d46a24100bcd9e3677, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 957237d8631f17d4ea75483fa33239cf, type: 3}
+  - m_RefCount: 49
+    m_Data: {fileID: 21300000, guid: f8be8c3242d0f7e419c932c294291710, type: 3}
+  - m_RefCount: 3
+    m_Data: {fileID: 21300000, guid: 458554761631d634db1863af7e4e1d64, type: 3}
+  - m_RefCount: 3
+    m_Data: {fileID: 21300000, guid: 9b28ffbd1972b1f4fa5d367c07dbabc6, type: 3}
+  - m_RefCount: 41
+    m_Data: {fileID: 21300000, guid: 467e5c1f2867eeb4f8910cf2582e2cb6, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 4500
     m_Data:
@@ -54442,6 +54879,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2003295630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4479376527628127145, guid: 29323cc4920214d42bd4f6f86e167475, type: 3}
+  m_PrefabInstance: {fileID: 1161017319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2003295632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003295630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The portal can send you to another point on the map.
 --- !u!1 &2055868088
 GameObject:
   m_ObjectHideFlags: 0
@@ -54453,6 +54909,7 @@ GameObject:
   - component: {fileID: 2055868089}
   - component: {fileID: 2055868091}
   - component: {fileID: 2055868090}
+  - component: {fileID: 2055868092}
   m_Layer: 0
   m_Name: laser (7)
   m_TagString: Trap
@@ -54539,8 +54996,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1720689371
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f514b3a9e262218479a9daa79060b575, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -54553,6 +55010,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2055868092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055868088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: The mouse can't get through these lasers.
 --- !u!1001 &2082252224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55090,27 +55561,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1558055641081192761, guid: 44941c5caf468774493bce3d3fbad7a6, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1558055641081192761, guid: 44941c5caf468774493bce3d3fbad7a6, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1558055641081192761, guid: 44941c5caf468774493bce3d3fbad7a6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 185
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1558055641081192761, guid: 44941c5caf468774493bce3d3fbad7a6, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 65
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1558055641081192761, guid: 44941c5caf468774493bce3d3fbad7a6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 92.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1558055641081192761, guid: 44941c5caf468774493bce3d3fbad7a6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -97.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1558055641104559053, guid: 44941c5caf468774493bce3d3fbad7a6, type: 3}
       propertyPath: m_AnchorMax.y
@@ -55584,10 +56055,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2142704504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64713f9eb75047b499322b17bb492062, type: 3}
+  m_Script: {fileID: 11500000, guid: 8bec83ac9e578b84fa057189b41762a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objToDestroy: {fileID: 0}
+  _textBox: {fileID: 5029370332445221061, guid: 40228059fc3c1c94f99877c8b5635c2c, type: 3}
+  _message: This cheese smells so weird...
 --- !u!1001 &3369763273675075094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55655,6 +56127,10 @@ PrefabInstance:
     - target: {fileID: 3682199041858779232, guid: e8a5bb88215d6e347b6e5eb902f0bb8b, type: 3}
       propertyPath: m_Name
       value: GreenRobot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3682199041858779232, guid: e8a5bb88215d6e347b6e5eb902f0bb8b, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3682199041858779233, guid: e8a5bb88215d6e347b6e5eb902f0bb8b, type: 3}
       propertyPath: m_RootOrder
@@ -55756,7 +56232,7 @@ PrefabInstance:
     - target: {fileID: 8593074398793192706, guid: ed7847f402ad40b44ba3232e45867664, type: 3}
       propertyPath: _objToDestroy
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1041885854}
     - target: {fileID: 8593074398793192709, guid: ed7847f402ad40b44ba3232e45867664, type: 3}
       propertyPath: m_Name
       value: Button

@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class MoveMouse : MonoBehaviour
 {
     [SerializeField] private float _speed = 2.5f;
-    [SerializeField] private GameObject FlowChart;
+    [SerializeField] private GameObject _flowChartContent;
 
     private Vector2 _startPosition;
     private Vector3 _target;
-    private int _pathIndex = -1;
+    private int _pathIndex = 0;
     private bool _needNewTarget = false;
 
     private SpriteRenderer _sprite;
@@ -41,11 +41,12 @@ public class MoveMouse : MonoBehaviour
             if (_needNewTarget)
             {
                 Moving move;
+
                 try
                 {
-                    if (!Enum.TryParse(
-                        CultureInfo.CurrentCulture.TextInfo.ToTitleCase(FlowChart.transform.GetChild(_pathIndex).GetChild(0).GetComponentInChildren<Image>().sprite.name),
-                        out move))
+                    if (!Enum.TryParse(CultureInfo.CurrentCulture.TextInfo
+                            .ToTitleCase(_flowChartContent.transform.GetChild(_pathIndex).GetChild(1).GetChild(0)
+                                .GetComponentInChildren<Image>().sprite.name), out move))
                     {
                         return;
                     }
@@ -125,7 +126,7 @@ public class MoveMouse : MonoBehaviour
     {
         _pathIndex++;
 
-        if (FlowChart.transform.childCount == _pathIndex)
+        if (_flowChartContent.transform.childCount == _pathIndex)
         {
             StartFromBeggining();
             return true;
@@ -137,7 +138,7 @@ public class MoveMouse : MonoBehaviour
     private void StartFromBeggining()
     {
         CommandList.GameStart = false;
-        _pathIndex = -1;
+        _pathIndex = 0;
         transform.position = _startPosition;
         _target = _startPosition;
     }

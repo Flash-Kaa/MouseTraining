@@ -60,3 +60,9 @@ TagManager:
   - name: Player
     uniqueID: 2971179881
     locked: 0
+  - name: Laser
+    uniqueID: 2574277925
+    locked: 0
+  - name: TextBox
+    uniqueID: 3565823577
+    locked: 0
