@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MouseRunSideways
+  m_Name: down
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: e1fedefe3674df444bf48d9221c7e68e, type: 3}
+      value: {fileID: 21300000, guid: 919049f52107e844fafd391f5cccc410, type: 3}
     - time: 0.2
-      value: {fileID: 21300000, guid: b5500533dad14a5498007f90ab70f61a, type: 3}
+      value: {fileID: 21300000, guid: b34e02177ecbc0e4c87b595f9583b1e9, type: 3}
     - time: 0.4
-      value: {fileID: 21300000, guid: e1fedefe3674df444bf48d9221c7e68e, type: 3}
+      value: {fileID: 21300000, guid: 919049f52107e844fafd391f5cccc410, type: 3}
     - time: 0.6
-      value: {fileID: 21300000, guid: e62bd584ffc705e45931b3011747d166, type: 3}
+      value: {fileID: 21300000, guid: 033c92aada3d34f4bba4b1b3ba8d41cd, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,10 +46,10 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: e1fedefe3674df444bf48d9221c7e68e, type: 3}
-    - {fileID: 21300000, guid: b5500533dad14a5498007f90ab70f61a, type: 3}
-    - {fileID: 21300000, guid: e1fedefe3674df444bf48d9221c7e68e, type: 3}
-    - {fileID: 21300000, guid: e62bd584ffc705e45931b3011747d166, type: 3}
+    - {fileID: 21300000, guid: 919049f52107e844fafd391f5cccc410, type: 3}
+    - {fileID: 21300000, guid: b34e02177ecbc0e4c87b595f9583b1e9, type: 3}
+    - {fileID: 21300000, guid: 919049f52107e844fafd391f5cccc410, type: 3}
+    - {fileID: 21300000, guid: 033c92aada3d34f4bba4b1b3ba8d41cd, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

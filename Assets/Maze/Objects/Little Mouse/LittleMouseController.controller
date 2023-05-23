@@ -150,7 +150,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 337a5cabfc99f184dbec25022baf6034, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3cc9c13ca05d0784298bc83d5fa93511, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -229,7 +229,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e206483d1bbe7574e8baa721ec73500b, type: 2}
+  m_Motion: {fileID: 7400000, guid: b80b875f94b1dfd4dab10a25acbc3acd, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -266,7 +266,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: blueRobotController
+  m_Name: LittleMouseController
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Direction
@@ -274,13 +274,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: StayDirection
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: -1
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -718,7 +718,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7c8439cf17cc6724fb9b384d7cef3e07, type: 2}
+  m_Motion: {fileID: 7400000, guid: cb66da05ea88ed647b46080e02020931, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -773,7 +773,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9223e23c20c41b745b85f25dde580a8c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 981385c3c009bae4cbf4120c181a958e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

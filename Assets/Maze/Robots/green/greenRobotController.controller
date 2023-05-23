@@ -278,7 +278,7 @@ AnimatorController:
   - m_Name: StayDirection
     m_Type: 3
     m_DefaultFloat: 0
-    m_DefaultInt: 0
+    m_DefaultInt: -1
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   m_AnimatorLayers:
@@ -790,16 +790,16 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 6384268153518299155}
-    m_Position: {x: 380, y: -70, z: 0}
+    m_Position: {x: 360, y: -110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1241355318241139187}
-    m_Position: {x: 640, y: 140, z: 0}
+    m_Position: {x: 680, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8315648228441269698}
-    m_Position: {x: 390, y: 140, z: 0}
+    m_Position: {x: 360, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4946895679764612193}
-    m_Position: {x: 660, y: -80, z: 0}
+    m_Position: {x: 700, y: -110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6066350090565692950}
     m_Position: {x: 300, y: 500, z: 0}
