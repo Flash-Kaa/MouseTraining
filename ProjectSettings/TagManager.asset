@@ -11,6 +11,7 @@ TagManager:
   - Portal
   - Button
   - FakeTrap
+  - MoveCell
   layers:
   - Default
   - TransparentFX
@@ -65,4 +66,7 @@ TagManager:
     locked: 0
   - name: TextBox
     uniqueID: 3565823577
+    locked: 0
+  - name: UI
+    uniqueID: 3347831705
     locked: 0

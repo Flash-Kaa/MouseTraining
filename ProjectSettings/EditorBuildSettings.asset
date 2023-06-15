@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: f4f5ca03b4f668e47ba7fbb335624816
+  - enabled: 1
+    path: Assets/Scenes/MenuSelectLevel.unity
+    guid: b8e49b8e9f8af2149b2d99d17ec55464
+  - enabled: 1
     path: Assets/Scenes/ForestMaze.unity
     guid: a594c696b4d60f545ace86881a455495
   - enabled: 1
@@ -23,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FirstFinalForestMaze.unity
     guid: 67ff97ed2f6a8b9448b144a7af7c6f94
+  - enabled: 1
+    path: Assets/Scenes/SecondFinalForestMaze.unity
+    guid: 8b1c4498544a047468e7f126b8b1b964
   m_configObjects: {}

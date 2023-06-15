@@ -5,11 +5,11 @@ public class UISlot : MonoBehaviour, IDropHandler
 {
     public void OnDrop(PointerEventData eventData)
     {
-        if (eventData.pointerEnter.GetComponent<UISlot>() == null)
-        {
-            Destroy(eventData.pointerDrag);
-            return;
-        }
+        //if (eventData.pointerEnter.GetComponent<UISlot>() == null)
+        //{
+        //    Destroy(eventData.pointerDrag);
+        //    return;
+        //}
 
         var otherItem = eventData.pointerDrag;
         otherItem.transform.SetParent(transform);
