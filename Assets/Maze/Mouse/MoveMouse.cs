@@ -8,15 +8,14 @@ public class MoveMouse : MonoBehaviour
     [SerializeField] private float _speed = 2.5f;
     [SerializeField] private GameObject _flowChartContent;
 
-    private Vector2 _startPosition;
     private Vector3 _target;
     private int _pathIndex = 0;
+    private Vector2 _startPosition;
+    private int _enterInPortalCount = 0;
     private bool _needNewTarget = false;
 
     private SpriteRenderer _sprite;
     private Animator _anim;
-
-    private int _enterInPortalCount = 0;
 
     void Start()
     {
@@ -52,11 +51,13 @@ public class MoveMouse : MonoBehaviour
             // Нет команды в ячейке
             try
             {
-                if (!Enum.TryParse(CultureInfo.CurrentCulture.TextInfo
-                        .ToTitleCase(_flowChartContent.transform.GetChild(_pathIndex).GetChild(1).GetChild(0)
-                            .GetComponentInChildren<Image>().sprite.name), out move))
-                {
-                    return;
+                if (!Enum.TryParse(
+                    CultureInfo.CurrentCulture.TextInfo.ToTitleCase(
+                        _flowChartContent.transform.GetChild(_pathIndex)
+                        .GetChild(1).GetChild(0).GetComponentInChildren<Image>().sprite.name), 
+                    out move))
+                { 
+                    return; 
                 }
             }
             catch { return; }
