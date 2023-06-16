@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class ToUpAnim : MonoBehaviour
 {
@@ -15,14 +12,11 @@ public class ToUpAnim : MonoBehaviour
         _target = transform.position + new Vector3(0, _moveOn);
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
 
         if (transform.position == _target)
-        {
             Destroy(gameObject);
-        }
     }
 }

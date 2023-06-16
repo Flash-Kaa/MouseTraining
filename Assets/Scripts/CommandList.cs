@@ -1,11 +1,11 @@
-using System.Collections.Generic;
-using UnityEngine;
-
-public static class CommandList
+public static class CommandCenter
 {
+    // Три блока Tile'a * размер одного Tile'a
     public static float BrickSize = 0.6f;
 
-    public static bool GameStart = false;
+    // Надо ли выполнять команды
+    public static bool StartExecutingCommands = false;
+
     public static bool HaveCollectableItem = false;
 }
 

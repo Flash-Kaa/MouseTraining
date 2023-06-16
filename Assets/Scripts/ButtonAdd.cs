@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ButtonAdd : MonoBehaviour
@@ -10,10 +7,14 @@ public class ButtonAdd : MonoBehaviour
 
     public void AddCell()
     {
+        // Получаем копию блока "конец" из блок-схемы
         var end = _flowChartContent.transform.GetChild(_flowChartContent.transform.childCount - 1).gameObject;
         
+        // Добавляем новую ячейку и копию блока "конец"
         Instantiate(_cell, _flowChartContent.transform);
         Instantiate(end, _flowChartContent.transform);
+
+        // Удаляем предыдущий блок "конец"
         Destroy(end);
     }
 }

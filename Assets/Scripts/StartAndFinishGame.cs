@@ -1,24 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class StartAndFinishGame : MonoBehaviour
 {
     public void StartGame()
     {
-        CommandList.GameStart = true;
+        CommandCenter.StartExecutingCommands = true;
     }
 
     public void FinishtGame()
     {
-        CommandList.GameStart = false;
+        CommandCenter.StartExecutingCommands = false;
     }
 
     private void Update()
     {
-        if (Input.GetKey("escape"))  // если нажата клавиша Esc (Escape)
+        if (Input.GetKey(KeyCode.Escape))
         {
-            Application.Quit();    // закрыть приложение
+            // Закрыть приложение
+            Application.Quit();    
         }
     }
 }

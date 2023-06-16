@@ -10,7 +10,8 @@ public class Helper : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        _createdTextBox = Object.Instantiate(_textBox, transform.position, _textBox.transform.rotation);
+        // Создаём описание объекта
+        _createdTextBox = Instantiate(_textBox, transform.position, _textBox.transform.rotation);
         _createdTextBox.GetComponentInChildren<TextMeshPro>().text = _message;
         _createdTextBox.transform.GetChild(0).GetComponent<Renderer>().sortingLayerName = "TextBox";
     }

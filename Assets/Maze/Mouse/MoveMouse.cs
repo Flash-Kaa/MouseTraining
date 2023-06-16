@@ -16,7 +16,7 @@ public class MoveMouse : MonoBehaviour
     private SpriteRenderer _sprite;
     private Animator _anim;
 
-    private byte _enterInPortalCount = 0;
+    private int _enterInPortalCount = 0;
 
     void Start()
     {
@@ -28,101 +28,99 @@ public class MoveMouse : MonoBehaviour
 
     void Update()
     {
-        if (CommandList.GameStart)
-        {
-            if (_target == transform.position)
-            {
-                if(EndIfUpdIndexOutOfRange())
-                    return;
-
-                _needNewTarget = true;
-            }
-            
-            if (_needNewTarget)
-            {
-                Moving move;
-
-                try
-                {
-                    if (!Enum.TryParse(CultureInfo.CurrentCulture.TextInfo
-                            .ToTitleCase(_flowChartContent.transform.GetChild(_pathIndex).GetChild(1).GetChild(0)
-                                .GetComponentInChildren<Image>().sprite.name), out move))
-                    {
-                        return;
-                    }
-                }
-                catch
-                {
-                    return;
-                }
-
-                switch (move)
-                {
-                    case Moving.Right:
-                        _target = transform.position + new Vector3(CommandList.BrickSize, 0);
-                        break;
-
-                    case Moving.Left:
-                        _target = transform.position + new Vector3(-CommandList.BrickSize, 0);
-                        break;
-
-                    case Moving.Up:
-                        _target = transform.position + new Vector3(0, CommandList.BrickSize);
-                        break;
-
-                    case Moving.Down:
-                        _target = transform.position + new Vector3(0, -CommandList.BrickSize);
-                        break;
-                }
-
-                if (move == Moving.Right)
-                {
-                    _sprite.flipX = false;
-                }
-                else if (move == Moving.Left)
-                {
-                    _sprite.flipX = true;
-                }
-                _anim.SetInteger("Moving", (int)move);
-
-                _needNewTarget = false;
-            }
-
-            transform.position = Vector2.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
-        }
-        else
+        // Мышь стоит, если ей не надо выполнять команды
+        if (!CommandCenter.StartExecutingCommands)
         {
             _anim.SetInteger("Moving", 0);
             _sprite.flipX = false;
+            return;
+        }    
+
+        if (_target == transform.position)
+        {
+            // Изменяем индекс следующей цели
+            if(NextIndexOutOfRange())
+                return;
+
+            _needNewTarget = true;
         }
+            
+        if (_needNewTarget)
+        {
+            Moving move;
+
+            // Нет команды в ячейке
+            try
+            {
+                if (!Enum.TryParse(CultureInfo.CurrentCulture.TextInfo
+                        .ToTitleCase(_flowChartContent.transform.GetChild(_pathIndex).GetChild(1).GetChild(0)
+                            .GetComponentInChildren<Image>().sprite.name), out move))
+                {
+                    return;
+                }
+            }
+            catch { return; }
+
+            ChangeTarget(move);
+
+            // Изменяем анимацию
+            _anim.SetInteger("Moving", (int)move);
+        }
+
+        // Перемещаем объект ближе к текущей цели
+        transform.position = Vector2.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Walls") 
-            || collision.gameObject.CompareTag("Trap"))
+        if (collision.gameObject.CompareTag("Walls") || collision.gameObject.CompareTag("Trap"))
         {
-            CommandList.HaveCollectableItem = false;
+            CommandCenter.HaveCollectableItem = false;
             StartFromBeggining();
         }
-
         else if (collision.gameObject.CompareTag("SaveProgress"))
         {
-            Destroy(collision.gameObject);
-            SaveProgress(collision.gameObject.transform.position);
-        }
+            // Сохраняем прогресс
+            _startPosition = collision.gameObject.transform.position;
 
+            Destroy(collision.gameObject);
+        }
         else if (collision.gameObject.CompareTag("Portal") && _enterInPortalCount++ % 2 == 0)
         {
-            transform.position = 
-                collision.gameObject.GetComponent<Teleport>().SecondPortal.transform.position;
+            // Телепортируем объект
+            transform.position = collision.gameObject.GetComponent<Teleport>().SecondPortal.transform.position;
             _needNewTarget = true;
-            EndIfUpdIndexOutOfRange();
-
+            NextIndexOutOfRange();
         }
     }
 
-    private bool EndIfUpdIndexOutOfRange()
+    private void ChangeTarget(Moving move)
+    {
+        switch (move)
+        {
+            case Moving.Right:
+                _target = transform.position + new Vector3(CommandCenter.BrickSize, 0);
+                _sprite.flipX = false;
+                break;
+
+            case Moving.Left:
+                _target = transform.position + new Vector3(-CommandCenter.BrickSize, 0);
+                _sprite.flipX = true;
+                break;
+
+            case Moving.Up:
+                _target = transform.position + new Vector3(0, CommandCenter.BrickSize);
+                break;
+
+            case Moving.Down:
+                _target = transform.position + new Vector3(0, -CommandCenter.BrickSize);
+                break;
+        }
+
+        _needNewTarget = false;
+    }
+
+    private bool NextIndexOutOfRange()
     {
         _pathIndex++;
 
@@ -137,14 +135,10 @@ public class MoveMouse : MonoBehaviour
 
     private void StartFromBeggining()
     {
-        CommandList.GameStart = false;
+        // Заканчиваем выполнение комманд и ставим мышь на начальную позицию
+        CommandCenter.StartExecutingCommands = false;
         _pathIndex = 0;
         transform.position = _startPosition;
         _target = _startPosition;
-    }
-
-    private void SaveProgress(Vector2 newStartPosition)
-    {
-        _startPosition = newStartPosition;
     }
 }

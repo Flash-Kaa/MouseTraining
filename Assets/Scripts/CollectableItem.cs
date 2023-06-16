@@ -8,6 +8,7 @@ public class CollectableItem : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            // Игрок подбирает коллекционный предмет
             CountItemsCollect++;
             Destroy(this.gameObject);
         }

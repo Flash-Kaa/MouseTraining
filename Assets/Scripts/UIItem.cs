@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class UIItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
@@ -17,10 +16,12 @@ public class UIItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        // Перетаскиваем не из блок-схемы (из списка доступных действий)
         if (!eventData.pointerEnter.transform.parent.transform.parent.CompareTag("DoingColumn"))
         {
+            // Копируем элемент
             var newObject = Object.Instantiate(this, transform.position, transform.rotation);
-            newObject.transform.SetParent(this.transform.parent);
+            newObject.transform.SetParent(transform.parent);
             newObject.transform.localScale = Vector2.one;
         }
 
@@ -31,12 +32,14 @@ public class UIItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHa
 
     public void OnDrag(PointerEventData eventData)
     {
+        // Изменяем позицию при перетаскивании с учётом размера экрана
         _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (eventData.pointerEnter == null || eventData.pointerEnter.tag != "DoingColumn")
+        // Вставляем не в блок-схему
+        if (eventData.pointerEnter == null || !eventData.pointerEnter.CompareTag("DoingColumn"))
         {
             Destroy(eventData.pointerDrag);
             return;
